@@ -2,33 +2,32 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <title>Седона</title>
 </head>
 <body>
   <header class="main-header">
     <nav class="main-header__nav main-nav">
+      <a class="main-nav__item-link">
+        <picture>
+          <img class="main-nav__item-logo" src="http://placehold.it/101x84" alt="Логотип Седона" width="101" height="84">
+        </picture>
+      </a>
       <button class="main-nav__button hamburger" type="button">
       </button>
-        <ul class="main-nav__list site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__item-link">
-              <picture>
-                <img class="site-nav__item-logo" src="http://placehold.it/101x84" alt="Логотип Седона" width="101" height="84">
-              </picture>
-            </a>
-          </li>
-          <li class="site-nav__item"><a class="site-nav__item-link" href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__item-link" href="catalog.html">Фото и видео</a></li>
-          <li class="site-nav__item"><a class="site-nav__item-link">Форма отзыва</a></li>
-          <li class="site-nav__item"><a class="site-nav__item-link" href="#">Html Academy</a></li>
-        </ul>
-          <section class="main-header__promo promo promo--banner">
-            <div class="promo__title promo__title--banner">
-              <img class="promo__image" src="http://placehold.it/902x214" width="902" height="214" alt="Sedona">
-            </div>
-          </section>
-      </nav>
+      <ul class="main-nav__list site-nav">
+        <li class="site-nav__item"><a class="site-nav__item-link" href="index.html">Главная</a></li>
+        <li class="site-nav__item"><a class="site-nav__item-link" href="catalog.html">Фото и видео</a></li>
+        <li class="site-nav__item"><a class="site-nav__item-link">Форма отзыва</a></li>
+        <li class="site-nav__item"><a class="site-nav__item-link" href="https://htmlacademy.ru">Html Academy</a></li>
+      </ul>
+    </nav>
   </header>
   <main class="main-content">
+    <section class="main-content__promo promo promo--banner">
+      <div class="promo__title promo__title--banner">
+        <img class="promo__image" src="http://placehold.it/902x214" width="902" height="214" alt="Sedona">
+      </div>
+    </section>
     <h1 class="visually-hidden">Отзывы о Седоне</h1>
       <section class="reviews">
         <h2 class="reviews__header">Оставьте свой отзыв</h2>
@@ -68,7 +67,7 @@
             <fieldset class="form__fieldset">
               <legend class="form__topic form__topic--impression">Ваше общее впечатление:</legend>
                 <label for="form__impression-god">
-                  <input class="visually-hidden" type="radio" name="impression" value="good" id="form__impression-good" checked>
+                  <input class="visually-hidden" type="radio" name="impression" value="good" id="form__impression-god" checked>
                   <span class="checkbox-indicator"></span>Скорее положительное
                 </label>
                 <label for="form__impression-bad">
@@ -114,21 +113,31 @@
     <section class="social">
       <h2 class="visually-hidden">Mы в соцсетях</h2>
       <p class="social__tag">#Visitsedona</p>
-        <a class="social__link social__link--tw" href="#">
-          <span class="visually-hidden">Twitter</span>
-        </a>
-        <a class="social__link social__link--fb" href="#">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-        <a class="social__link social__link--you" href="#">
-          <span class="visually-hidden">Youtube</span>
-        </a>
+      <ul class="social-nav">
+        <li class="social-nav__item">
+          <a class="social__link social__link--tw" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social-nav__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-nav__item">
+          <a class="social__link social__link--you" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="social-nav__item">
           <div class="copyright">
             <b class="copyright__dev">Разработано</b>
             <a class="copyright__logo" href="#">
             </a>
           </div>
-      </section>
+        </li>
+      </ul>
+    </section>
   </footer>
 </body>
 </html>

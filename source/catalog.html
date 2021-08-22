@@ -7,29 +7,27 @@
 <body>
   <header class="main-header">
     <nav class="main-header__nav main-nav">
+      <a class="main-nav__item-link">
+        <picture>
+          <img class="main-nav__item-logo" src="http://placehold.it/101x84" alt="Логотип Седона" width="101" height="84">
+        </picture>
+      </a>
       <button class="main-nav__button hamburger" type="button">
       </button>
-        <ul class="main-nav__list site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__item-link">
-              <picture>
-                <img class="site-nav__item-logo" src="http://placehold.it/101x84" alt="Логотип Седона" width="101" height="84">
-              </picture>
-            </a>
-          </li>
-          <li class="site-nav__item"><a class="site-nav__item-link" href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__item-link">Фото и видео</a></li>
-          <li class="site-nav__item"><a class="site-nav__item-link" href="form.html">Форма отзыва</a></li>
-          <li class="site-nav__item"><a class="site-nav__item-link" href="#">Html Academy</a></li>
-        </ul>
-          <section class="main-header__promo promo promo--banner">
-            <div class="promo__title promo__title--banner">
-              <img class="promo__image" src="http://placehold.it/902x214" width="902" height="214" alt="Sedona">
-            </div>
-          </section>
+      <ul class="main-nav__list site-nav">
+        <li class="site-nav__item"><a class="site-nav__item-link" href="index.html">Главная</a></li>
+        <li class="site-nav__item"><a class="site-nav__item-link">Фото и видео</a></li>
+        <li class="site-nav__item"><a class="site-nav__item-link" href="form.html">Форма отзыва</a></li>
+        <li class="site-nav__item"><a class="site-nav__item-link" href="https://htmlacademy.ru">Html Academy</a></li>
+      </ul>
     </nav>
   </header>
   <main class="main-content">
+    <section class="main-content__promo promo promo--banner">
+      <div class="promo__title promo__title--banner">
+        <img class="promo__image" src="http://placehold.it/902x214" width="902" height="214" alt="Sedona">
+      </div>
+    </section>
     <h1 class="visually-hidden">Фотографии и видео про Седону!</h1>
     <section class="photos">
       <h2 class="photos__header">Фото и видео</h2>
@@ -46,7 +44,7 @@
             <cite class="photos__author">Автор фото: Борис</cite>
             <div class="photos__like">
               <button class="photos__like-icon" type="button">
-                <!--<svg>иконка</svg>-->
+                <span class="visually-hidden">иконка Like</span>
               </button>
               <div class="photos__like-count">1350</div>
             </div>
@@ -63,7 +61,7 @@
             <cite class="photos__author">Автор фото: Сергей</cite>
             <div class="photos__like">
               <button class="photos__like-icon" type="button">
-                <!--<svg>иконка</svg>-->
+                <span class="visually-hidden">иконка Like</span>
               </button>
               <div class="photos__like-count">143</div>
             </div>
@@ -80,7 +78,7 @@
             <cite class="photos__author">Автор фото: Петр</cite>
             <div class="photos__like">
               <button class="photos__like-icon" type="button">
-                <!--<svg>иконка</svg>-->
+                <span class="visually-hidden">иконка Like</span>
               </button>
               <div class="photos__like-count">96</div>
             </div>
@@ -97,7 +95,7 @@
             <cite class="photos__author">Автор фото: Антон</cite>
             <div class="photos__like">
               <button class="photos__like-icon" type="button">
-                <!--<svg>иконка</svg>-->
+                <span class="visually-hidden">иконка Like</span>
               </button>
               <div class="photos__like-count">254</div>
             </div>
@@ -109,7 +107,9 @@
       <h2 class="visually-hidden">Видео-презентация о городе Седона</h2>
       <b class="video__title">Все еще сомневаетесь?</b>
       <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="video__sedona" width="320" height="201"></video>
+      <picture>
+        <img class="video__sedona" src="http://placehold.it/320x201" alt="Логотип Седона" width="320" height="201">
+      </picture>
       <div class="video__controls">
         <div class="video__line">
           <div class="video__hr-line"></div>
@@ -134,21 +134,31 @@
     <section class="social">
       <h2 class="visually-hidden">Mы в соцсетях</h2>
       <p class="social__tag">#Visitsedona</p>
-        <a class="social__link social__link--tw" href="#">
-          <span class="visually-hidden">Twitter</span>
-        </a>
-        <a class="social__link social__link--fb" href="#">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-        <a class="social__link social__link--you" href="#">
-          <span class="visually-hidden">Youtube</span>
-        </a>
+      <ul class="social-nav">
+        <li class="social-nav__item">
+          <a class="social__link social__link--tw" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social-nav__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-nav__item">
+          <a class="social__link social__link--you" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="social-nav__item">
           <div class="copyright">
             <b class="copyright__dev">Разработано</b>
             <a class="copyright__logo" href="#">
             </a>
           </div>
-      </section>
+        </li>
+      </ul>
+    </section>
   </footer>
 </body>
 </html>
